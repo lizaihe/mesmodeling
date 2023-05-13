@@ -4,7 +4,7 @@ import pymysql
 
 def db_select(dict_request):
     try:
-        conn = pymysql.connect(host="3.35.6.10", user="webuser", password="mysql", db="webfab", charset="utf8")
+        conn = pymysql.connect(host="127.0.0.1", user="user", password="pwd", db="db", charset="utf8")
         curs = conn.cursor()
 
         str_sql = dict_request["req_sql"]
@@ -59,7 +59,7 @@ def db_select(dict_request):
 
 def db_execute(dict_request):
     try:
-        conn = pymysql.connect(host="3.35.6.10", user="webuser", password="mysql", db="webfab", charset="utf8")
+        conn = pymysql.connect(host="127.0.0.1", user="user", password="pwd", db="db", charset="utf8")
         curs = conn.cursor()
 
         str_sql = dict_request["req_sql"]
